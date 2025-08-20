@@ -78,7 +78,7 @@ function atualizaMediafinal() {
   const mediaFinal = calculadoraMediaFinal();
 
   // atualiza as células do rodapé (ids do seu HTML: 'media' e 'media-resultado')
-  document.getElementById('media').innerHTML = mediaFinal;
+  document.getElementById('media').innerHTML = mediaFinal.toFixed(1);
   document.getElementById('media-resultado').innerHTML =
     mediaFinal >= 7 ? spanAprovado : spanReprovado;
 }
